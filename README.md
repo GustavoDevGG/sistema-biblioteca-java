@@ -32,6 +32,7 @@ O projeto permite gerenciar livros, usuários, empréstimos e reservas. Também 
 - Devolver livros.
 
 ### ⏳ Reservas
+
 Quando um livro está indisponível, o usuário pode entrar em uma fila de espera.
 
 A fila utiliza a regra **FIFO (First In, First Out)**: o primeiro usuário a reservar é o primeiro a receber o livro.
@@ -69,10 +70,13 @@ realizado   entrar na fila?
            │       │
            ▼       ▼
       Cria reserva  Fim
-🔄 Fluxo da devolução
+```
+
+## 🔄 Fluxo da devolução
 
 Quando um livro é devolvido, o sistema verifica se existe uma fila de reservas:
 
+```text
 Livro devolvido
       │
       ▼
@@ -92,27 +96,44 @@ da fila
          ▼
 Realiza o empréstimo
 automaticamente
-▶️ Como executar
+```
+
+---
+
+## ▶️ Como executar
 
 Clone o repositório:
 
+```bash
 git clone SEU_LINK_DO_REPOSITORIO
+```
 
-Abra o projeto em uma IDE Java, como IntelliJ IDEA, Eclipse ou VS Code, e execute a classe:
+Abra o projeto em uma IDE Java, como **IntelliJ IDEA**, Eclipse ou VS Code, e execute a classe:
 
+```text
 Main.java
-🚀 Tecnologias
-Java;
-Programação Orientada a Objetos;
-Java Collections Framework.
-📌 Possíveis melhorias futuras
- Adicionar datas e prazos aos empréstimos;
- Criar histórico de empréstimos;
- Melhorar a validação das entradas;
- Implementar persistência de dados;
- Criar uma interface gráfica.
-👨‍💻 Autor
+```
 
-Desenvolvido por Gustavo Marques.
+---
 
-Projeto criado para praticar Java, POO e Collections, aplicando os conhecimentos estudados em um sistema prático.
+## 🚀 Tecnologias
+
+- Java;
+- Programação Orientada a Objetos;
+- Java Collections Framework.
+
+---
+
+## 📌 Possíveis melhorias futuras
+
+- [ ] Melhorar a validação das entradas;
+- [ ] Implementar persistência de dados;
+- [ ] Criar uma interface gráfica.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Gustavo Marques**.
+
+Projeto criado para praticar **Java, POO e Collections**, aplicando os conhecimentos estudados em um sistema prático.
